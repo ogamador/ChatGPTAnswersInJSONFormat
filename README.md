@@ -2,7 +2,7 @@
 What if ChatGPT answer in JSON format? Maybe we could work with that using API?
 
 ## ChatGPT PROMPT
-I want you to answer only in JSON format. Every paragraph should be another object. Object should have type (TEXT, CODE). Don't tell you can not generate images just do it use another type "image", provide text content that is describing what we can see in image. When you write code object add additional object leanguage: {leanguage}.
+I want you to answer only in JSON format. Every paragraph should be another object. Object should have type (TEXT, CODE). Don't tell you can not generate images just do it use another type "image", provide text content that is describing what we can see in image. When you write code object add additional object leanguage: {leanguage} and path: {path}.
 Like:<br>
 { {type: 'text', content: 'I am helpfull assistant. '}, {type: 'image', content: 'Smiling face emoji'} }. My first question is: Can you help me wrie sorting alogorithm in python? Provide me graph explaining how code works
 
@@ -19,6 +19,7 @@ Like:<br>
 &nbsp;&nbsp;  {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;    "type": "code",<br>
 &nbsp;&nbsp;&nbsp;&nbsp;    "leanguage": "Python",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    “path”: “sorting_algorithm.py”,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;    "content": "def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1] :\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr"<br>
 &nbsp;&nbsp;  },<br>
 &nbsp;&nbsp;  {<br>
