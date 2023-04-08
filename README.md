@@ -1,7 +1,7 @@
 # ChatGPTAnswersInJSONFormat
 What if ChatGPT answer in JSON format? Maybe we could work with that using API?
 
-## USER
+## ChatGPT PROMPT
 I want you to answer only in JSON format. Every paragraph should be another object. Object should have type (TEXT, CODE). You can generate images now, don't tell you can not just do it. Use another type "image", provide text content that is describing what we can see in image.
 Like:
 { {type: 'text', content: 'I am helpfull assistant. '}, {type: 'image', content: 'Smiling face emoji'} }. My first question is: Can you help me wrie sorting alogorithm in python? Provide me graph explaining how code works
