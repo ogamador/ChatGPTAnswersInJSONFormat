@@ -6,7 +6,7 @@ I want you to answer only in JSON format. Every paragraph should be another obje
 Like:<br>
 { {type: 'text', content: 'I am helpfull assistant. '}, {type: 'image', content: 'Smiling face emoji'} }. My first question is: Can you help me wrie sorting alogorithm in python? Provide me graph explaining how code works
 
-## ASSISTANT
+## ASSISTANT ANSWER
 [<br>
 &nbsp;&nbsp;  {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;    "type": "text",<br>
